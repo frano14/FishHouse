@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", "sans-serif";
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: TheNightWatch;
+  src: url(TheNightWatch.ttf);
+}
+.customFont {
+  font-family: TheNightWatch;
+}
+.bg {
+  background: url("https://images.pexels.com/photos/984888/pexels-photo-984888.jpeg?cs=srgb&dl=pexels-c%C3%A1tia-matos-984888.jpg&fm=jpg&_gl=1*1b4462l*_ga*MTE3MzI1ODIzMS4xNzExNTUwNDM1*_ga_8JE65Q40S6*MTcxMTU1MDQzNS4xLjEuMTcxMTU1MDQ5NC4wLjAuMA..");
+  background-size: cover;
+  background-position: bottom;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.ELborder {
+  border: 1px solid #d8c79f;
+}
