@@ -31,7 +31,7 @@ const Navbar = () => {
         
         ${
           isFixed
-            ? "fixed bg-white sm:flex hidden w-[100vw] left-0 xl:px-[23%] px-[6%] m-auto text-black z-20"
+            ? "fixed bg-white sm:flex hidden w-[100vw] left-0 xl:px-[17%] px-[6%] m-auto text-black z-20"
             : "absolute top-0 sm:flex hidden justify-between w-full z-[5] text-white"
         } 
         `}
@@ -132,7 +132,7 @@ const Navbar = () => {
         <ul
           className={`fixed left-0 top-[72px] ${
             activeMenu ? "flex" : "hidden"
-          } flex-col justify-center items-center gap-6 p-6  bg-secondary w-full text-[20px]`}
+          } flex-col justify-center items-center gap-6 p-6 text-white bg-secondary w-full text-[20px]`}
         >
           <li>
             <Link
