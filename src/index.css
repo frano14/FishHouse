@@ -25,3 +25,40 @@ body {
 .ELborder {
   border: 1px solid #d8c79f;
 }
+.ELborderBottom {
+  border-bottom: 1px solid #d8c79f;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #ffffff;
+  transition: background-color 5000s ease-in-out 0s;
+  box-shadow: inset 0 0 20px 20px transparent;
+}
+.zoom {
+  transform: scale(1.006);
+}
+.white__gradient {
+  background: rgba(255, 255, 255, 0.6);
+  filter: blur(400px);
+}
+
+@media (max-width: 1060px) {
+  .resPhoto {
+    border-radius: 0 0 12px 12px;
+  }
+}
+
+@media (min-width: 1061px) {
+  .resPhoto {
+    border-radius: 0 12px 12px 0;
+  }
+}

@@ -5,6 +5,8 @@ import Menu from "./components/Menu";
 import styles from "./style";
 import Chefs from "./components/Chefs";
 import WorkingHours from "./components/WorkingHours";
+import Reservation from "./components/Reservation";
+import Contacts from "./components/Contacts";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
             <Menu />
             <Chefs />
             <WorkingHours />
+            <Reservation />
+            <Contacts />
           </div>
         </div>
       </div>

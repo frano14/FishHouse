@@ -4,8 +4,17 @@ import styles from "../style";
 import instaImg from "../assets/insta.png";
 import facebookImg from "../assets/facebook.png";
 import twitterImg from "../assets/twitter.png";
+import { Link } from "react-scroll";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Hero = () => {
+  useGSAP(() => {
+    gsap.to("#heroTitle", { opacity: 1, delay: 2 });
+    gsap.to("#subtitle", { opacity: 1, delay: 1 });
+    gsap.to("#menuButton", { opacity: 1, delay: 1.5 });
+  });
+
   return (
     <section
       id="hero"
@@ -15,18 +24,29 @@ const Hero = () => {
       <div
         className={`${styles.boxWidth} text-white ${styles.paddingX} ${styles.flexCenter} flex-col relative z-[2] h-full`}
       >
-        <h1 className="customFont z-[2] xg:text-[160px] lg:text-[134px] md:text-[114px] sm:text-[86px] ss:text-[74px] xs:text-[54px] text-[40px]  font-thin max-h-[200px]  text-center tracking-widest">
+        <h1
+          id="heroTitle"
+          className=" opacity-0 customFont z-[2] xg:text-[160px] lg:text-[134px] md:text-[114px] sm:text-[86px] ss:text-[74px] xs:text-[54px] text-[40px]  font-thin max-h-[200px]  text-center tracking-widest"
+        >
           FISH HOUSE
         </h1>
-        <h3 className="z-[2] customFont xg:text-[24px] lg:text-[22px] md:text-[20px] sm:text-[18px] ss:text-[16px] xs:text-[14px] text-[12px] tracking-[5px] mt-8 mb-16 w-full text-center">
+        <h3
+          id="subtitle"
+          className=" opacity-0 z-[2] customFont xg:text-[24px] lg:text-[22px] md:text-[20px] sm:text-[18px] ss:text-[16px] xs:text-[14px] text-[12px] tracking-[5px] mt-8 mb-16 w-full text-center"
+        >
           BRASSERIE DE LUXE
         </h3>
-        <div className="z-[2] relative">
-          <div className="ss:w-[200px] w-[120px] ss:h-[75px] h-[50px] ELborder rounded-[50%] bg-transparent -rotate-6"></div>
-          <div className="ss:w-[200px] w-[120px] ss:h-[75px] h-[50px] absolute left-[5px] top-[10px] ELborder rounded-[50%] bg-transparent -rotate-6"></div>
-          <p className="absolute ss:top-[40%] top-[30%] ss:right-[40%] right-[30%]">
-            Menu
-          </p>
+        <div
+          id="menuButton"
+          className="opacity-0 z-[2] relative cursor-pointer"
+        >
+          <Link to="menu" smooth={true} duration={500}>
+            <div className="ss:w-[200px] w-[120px] ss:h-[75px] h-[50px] ELborder rounded-[50%] bg-transparent -rotate-6"></div>
+            <div className="ss:w-[200px] w-[120px] ss:h-[75px] h-[50px] absolute left-[5px] top-[10px] ELborder rounded-[50%] bg-transparent -rotate-6"></div>
+            <p className="absolute ss:top-[40%] top-[30%] ss:right-[40%] right-[30%]">
+              Menu
+            </p>
+          </Link>
         </div>
         <div className=" absolute right-0 cm:bottom-[80px] bottom-[40px] z-[2] flex justify-end items-end">
           <div className="absolute right-[20px] bottom-[15px] w-[60px] h-[1px] bg-white mx-5"></div>
