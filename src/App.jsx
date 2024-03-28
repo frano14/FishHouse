@@ -1,6 +1,10 @@
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import AboutUs from "./components/AboutUs";
+import Menu from "./components/Menu";
 import styles from "./style";
+import Chefs from "./components/Chefs";
+import WorkingHours from "./components/WorkingHours";
 
 function App() {
   return (
@@ -13,6 +17,14 @@ function App() {
         </div>
         <div className={`relative`}>
           <Hero />
+        </div>
+        <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+          <div className={`${styles.boxWidth}`}>
+            <AboutUs />
+            <Menu />
+            <Chefs />
+            <WorkingHours />
+          </div>
         </div>
       </div>
     </>

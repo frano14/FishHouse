@@ -11,7 +11,7 @@ const Hero = () => {
       id="hero"
       className={`bg w-[100vw] h-[100vh] ${styles.paddingX} ${styles.flexCenter}`}
     >
-      <div className="overlay absolute w-full h-full z-[1]"></div>
+      <div className="overlay absolute w-full h-full z-[1] left-0"></div>
       <div
         className={`${styles.boxWidth} text-white ${styles.paddingX} ${styles.flexCenter} flex-col relative z-[2] h-full`}
       >
@@ -55,18 +55,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-{
-  /* <div className="z-[2] absolute bottom-[5%] right-[20%]">radi</div>
-      <h1 className="customFont z-[2] text-[164px] font-thin max-h-[200px]  tracking-widest">
-        FISH HOUSE
-      </h1>
-      <h3 className="z-[2] customFont text-[24px] tracking-[5px] mt-8 mb-16 bg-purple-500 w-full">
-        BRASSERIE DE LUXE
-      </h3>
-      <div className="z-[2] relative">
-        <div className="w-[200px] h-[75px] bg-white ELborder rounded-[50%] bg-transparent -rotate-6"></div>
-        <div className="absolute left-[5px] top-[10px] w-[200px] h-[75px] bg-white ELborder rounded-[50%] bg-transparent -rotate-6"></div>
-        <p className="absolute top-[40%] right-[40%]">Menu</p>
-      </div> */
-}
